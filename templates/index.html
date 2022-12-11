@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackosta</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/styles.css')}}"/>
+</head>
+<div id="bg"></div>
+<body ><form action="{{url_for('calculation')}}" method="post">
+    <div class="form-field">
+      <input type="text" name="fnumber" placeholder="ENTER THE FIRST NUMBER" required="required" step="any"/>
+    </div>
+    
+    <div class="form-field" >
+      <input type="text" name="snumber" placeholder="ENTER THE SECOND NUMBER" required="required" step="any"/>                      </div>
+    <div class="form-field">
+    <pre><label >Choose an Operator</label></pre><br>
+      <pre> <select name="operator" id="operator" >
+          <option value="+">Addition</option>
+          <option value="-">Subtraction</option>
+          <option value="/">Divide</option>
+          <option value="*">Multiply</option>
+      </select></pre></div>
+  
+    <div class="form-field">
+      <button class="btn" type="submit">SUBMIT</button>
+    </div>
+    <!-- <p><pre><b> <h1>     {{x}}</b></h1></pre></p> -->
+    <input type="text" placeholder="{{x}}">
+  </form>
+    </div>
+</b>
+</body>
+</html>
